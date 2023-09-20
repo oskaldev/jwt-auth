@@ -1,10 +1,10 @@
 import React, { FC, useContext, useState } from 'react';
-import { Context } from '../main'
+import { Context } from '../main';
 
 const LoginForm: FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  const {store} = useContext(Context)
+  const { store } = useContext(Context);
   return (
     <div>
       <input
