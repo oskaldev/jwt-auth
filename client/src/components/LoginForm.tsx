@@ -1,4 +1,6 @@
+/* eslint-disable react-refresh/only-export-components */
 import React, { FC, useContext, useState } from 'react';
+import { observer } from 'mobx-react-lite';
 import { Context } from '../main';
 
 const LoginForm: FC = () => {
@@ -25,4 +27,4 @@ const LoginForm: FC = () => {
   );
 };
 
-export default LoginForm;
+export default observer(LoginForm);
